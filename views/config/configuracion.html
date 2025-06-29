@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Configuración | Mi revista Digital</title>
+    <link rel="icon" href="https://elucabista.com/wp-content/uploads/2024/05/el-ucabista-favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../shared/css/vars.css">
+    <link rel="stylesheet" href="../../shared/css/common.css">
+    <link rel="stylesheet" href="config.css">
+</head>
+<body>
+
+    <header>
+        <h1 class="mainTitle">Configuración</h1>
+        <h2>Personaliza tu experiencia</h2>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-custom">
+      <div class="container-fluid">
+        <a class="navbar-brand navbar-brand-custom" href="../../index.html">Mi Revista Digital</a>
+        <button class="navbar-toggler navbar-toggler-custom" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon navbar-toggler-icon-custom"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav horList navbar-nav-center">
+            <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="../contact/contacto.html">Contacto</a></li>
+            <li class="nav-item"><a class="nav-link" href="#sobreMi">Sobre mí</a></li>
+            <li class="nav-item"><a class="nav-link" href="../config/configuracion.html">Configuración</a></li>
+          </ul>
+        </div>
+      </div>
+      <a href="#chat" class="chat">Chat</a>
+    </nav>
+
+    <main class="container-fluid my-4">
+      <div class="row g-3">
+        <aside class="leftAside col-lg-3 mb-4 px-2">
+            <h2><u>Popular Ahora</u></h2>
+            <article>
+                <ol>
+                    <li>
+                        <a href="/index.html">Anunciada Nintendo Switch 2</a>
+                    </li>
+                    <li>
+                        <a href="/index.html">Hollow Knight: Silksong Recibe Fecha de Lanzamiento</a>
+                    </li>
+                    <li>
+                        <a href="/index.html">NVIDIA GeForce RTX 5090 Sale a la Venta</a>
+                    </li>
+                </ol>
+            </article>
+        </aside>
+
+        <div class="col-lg-6 mb-4 px-2">
+          <section class="configSections mb-4">
+              <form>
+                  <fieldset>
+                      <legend>Configuración de Perfil</legend>
+                      <label for="pfp">Imagen de perfil: </label>
+                      <input id="pfp" type="file" name="pfp">
+
+                      <label for="date">Fecha de nacimiento: </label>
+                      <input id="date" type="date" name="date">
+
+                      <label for="sex">Sexo: </label>
+                      <div class="sexForm">
+                          <label>
+                              <input type="radio" name="sex" value="m"> Hombre
+                          </label>
+                          <label>
+                              <input type="radio" name="sex" value="f"> Mujer
+                          </label>
+                      </div>
+
+                      <label for="pageColor">Color principal de la página: </label>
+                      <input id="pageColor" type="color" value="#121212">
+                  </fieldset>
+                  <fieldset>
+                      <legend>Cambiar Clave</legend>
+                      <label for="username">Nombre de usuario: </label>
+                      <input id="username" type="text" placeholder="Nombre de usuario...">
+
+                      <label for="oldPas">Contraseña actual: </label>
+                      <input id="oldPas" type="password" placeholder="Contraseña actual...">
+
+                      <label for="newPas">Nueva contraseña: </label>
+                      <input id="newPas" type="password" placeholder="Nueva contraseña...">
+                  </fieldset>
+
+                  <div class="sexForm">
+                      <button type="submit">Enviar</button>
+                      <button type="reset">Limpiar</button>
+                  </div>
+              </form>
+          </section>
+
+          <section class="configSections">
+              <h2><u>Usuarios Registrados</u></h2>
+              <table>
+                  <tr>
+                      <th>ID</th>
+                      <th>Imagen de perfil</th>
+                      <th>Correo</th>
+                      <th>Nombre</th>
+                      <th>Apellido</th>
+                      <th>Cedula</th>
+                      <th>Fecha de nacimiento</th>
+                  </tr>
+                  <tr id="even">
+                      <td>0</td>
+                      <td><img src="../../assets/img/foto2.png" class="imgTable"></td>
+                      <td>lacesin.23@est.ucab.edu.ve</td>
+                      <td>Luis</td>
+                      <td>Cesín</td>
+                      <td>31.347.832</td>
+                      <td>05-05-2004</td>
+                  </tr>
+                  <tr id="odd">
+                      <td>1</td>
+                      <td><img src="../../assets/img/foto.png" class="imgTable"></td>
+                      <td>aipita.23@est.ucab.edu.ve</td>
+                      <td>Adrián</td>
+                      <td>Pita</td>
+                      <td>12.345.678</td>
+                      <td>01-02-2006</td>
+                  </tr>
+                  <tr id="even">
+                      <td>2</td>
+                      <td><img src="../../assets/img/foto2.png" class="imgTable"></td>
+                      <td>aimora.23@est.ucab.edu.ve</td>
+                      <td>Ana</td>
+                      <td>Mora</td>
+                      <td>12.345.678</td>
+                      <td>28-01-2005</td>
+                  </tr>
+                  <tr id="odd">
+                      <td>3</td>
+                      <td><img src="../../assets/img/foto.png" class="imgTable"></td>
+                      <td>cvbest.23@est.ucab.edu.ve</td>
+                      <td>Camila</td>
+                      <td>Best</td>
+                      <td>12.345.678</td>
+                      <td>02-03-2003</td>
+                  </tr>
+                  <tr id="even">
+                      <td>4</td>
+                      <td><img src="../../assets/img/foto2.png" class="imgTable"></td>
+                      <td>odjaramillo.23@est.ucab.edu.ve</td>
+                      <td>Oscar</td>
+                      <td>Jaramillo</td>
+                      <td>12.345.678</td>
+                      <td>28-06-1998</td>
+                  </tr>
+              </table>
+          </section>
+        </div>
+
+        <aside class="rightAside col-lg-3 mb-4 px-2">
+            <h2><u>Sobre mí</u></h2>
+            <article>
+                <p>
+                    Mi nombre es Luis Cesín, soy un estudiante de quinto semestre de Ingeniería Informática en 
+                    la Universidad Católica Andrés Bello, y esta simple página web es un proyecto del curso de
+                    Programación Orientada a la Web.
+                </p>
+                <hr>
+            </article>
+            <a href="docs/README.md">README</a>
+        </aside>
+      </div>
+    </main>
+
+    <hr>
+    <footer class="indexFooter">
+        <div class="indexFooterDiv">
+            <p><a href="/contacto.html">Contacto:</a> lacesin.23@est.ucab.edu.ve</p>
+        </div>
+        <div class="indexFooterDiv">
+            <p>© 2025 Mi Sitio Web. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../shared/js/forms.js"></script>
+    <script src="../../shared/js/background-color.js"></script>
+    <script src="config.js"></script>
+</body>

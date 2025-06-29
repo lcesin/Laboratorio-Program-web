@@ -1,0 +1,10 @@
+:root {
+  --main-background-color: rgb(18,18,18);
+  --main-text-color: white;
+  --accent-color: blueviolet;
+  --gradient--start: rgb(13, 13, 121);
+  --gradient--finish: purple;
+  --hover-color: rgb(210, 210, 210);
+  --link-color: rgb(99, 184, 212);
+  --main-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
